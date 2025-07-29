@@ -4,6 +4,92 @@
     box-sizing: border-box;
 }
 
-@media (min-width: 0px) and (max-width: 600px) {
-        
+    /*textos globais*/
+h1, h2, h3, p {
+    color: whitesmoke;
+    text-align: center;
+}
+
+    /*para um scroll mais suave ao clicar nos links internos*/
+html{
+    scroll-behavior: smooth;
+}
+
+    /*configurações para celulares*/
+@media (min-width: 0px) {
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            background-repeat: no-repeat;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: 
+            'hero hero'
+            'main main'
+            'rodape rodape';
+            ;
+        }
+}
+header {
+    width: 100vw;
+    height: 100vh;
+    grid-area: hero;
+    border: 2px solid black;
+    background-image: url(/imagens/layout-Destaque-mobileFundo-Destaque.png);
+    background-size: cover;
+}
+#hero {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 50px;
+}
+#hero h1{
+    color: #FFC857;
+    font-size: 40px;
+    font-weight: bold;
+}
+    /*lua da sessão hero*/
+.logo {
+    position: absolute;
+    opacity: 0.8;
+    margin-top: -90vh;
+    margin-left: -70vw;
+}
+#hero > div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+#hero > div a {
+    width: 150px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    background-color: #221E22;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+#hero > div a:hover {
+    transition: .3s;
+    text-decoration: underline;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+main {
+    width: 100vw;
+    height: 100vh;
+    grid-area: main;
+    border: 2px solid black;
+}
+footer {
+    width: 100vw;
+    height: 50px;
+    grid-area: rodape;
+    border: 2px solid black;
 }

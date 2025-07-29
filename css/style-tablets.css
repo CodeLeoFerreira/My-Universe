@@ -1,0 +1,21 @@
+@media (min-width: 500px) {
+    header {
+        background-image: url(/imagens/fundo-destaque-telas-maiores.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .logo { /*ajustando posição da lua para tablets telas até 720px*/
+        margin-top: -90vh;
+        margin-left: -80vw;
+        width: 200px;
+    }
+}
+
+@media (min-width: 720px) {
+    .logo { /*ajustando posição da lua para tablets*/
+        margin-top: -90vh;
+        margin-left: -90vw;
+        width: 250px;
+    }
+    
+}
