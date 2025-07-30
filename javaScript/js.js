@@ -18,4 +18,4 @@ function escreverTexto() {
 }
 escreverTexto()
 
-    // animação do scroll
+    // aqui vai a animação do scroll
