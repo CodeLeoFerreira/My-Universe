@@ -1,3 +1,4 @@
+<<<<<<< HEAD
     // animação do texto sendo digitado
 const titulo = 'My Universe'
 const textoAnimado = document.getElementById('textoAnimado');
@@ -19,3 +20,5 @@ function escreverTexto() {
 escreverTexto()
 
     // aqui vai a animação do scroll
+=======
+>>>>>>> e1455ec524657dc5a6a7c425e0cb093d637807a2
