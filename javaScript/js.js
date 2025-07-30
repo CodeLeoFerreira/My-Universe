@@ -1,5 +1,3 @@
-window.alert('olá, peço desculpas, mas está pagina ainda está em construção, por favor, volte mais tarde! :)');
-
     // animação do texto sendo digitado
 const titulo = 'My Universe'
 const textoAnimado = document.getElementById('textoAnimado');
