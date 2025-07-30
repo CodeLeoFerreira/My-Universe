@@ -9,6 +9,9 @@
         margin-left: -80vw;
         width: 200px;
     }
+    .astronauta { /*ajustes de tamanho do astronauta*/
+    width: 120px;
+    }
 }
 
 @media (min-width: 720px) {
@@ -17,5 +20,7 @@
         margin-left: -90vw;
         width: 250px;
     }
-    
+    .astronauta { /*ajustes de tamanho do astronauta*/
+    width: 150px;
+    }
 }

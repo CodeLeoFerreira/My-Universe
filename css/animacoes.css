@@ -1,0 +1,69 @@
+    /*animação da lua*/
+@keyframes animacao-lua {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.logo {
+    animation: animacao-lua 15s linear infinite;
+}
+
+    /*animação do astronauta flutuando*/
+@keyframes animacao-astronauta {
+    0% {
+        rotate: 0deg;
+        transform: translateY(0px);
+    }
+    25% {
+        rotate: 15deg;
+        transform: translateY(20px);
+    }
+    50% {
+        rotate: 0deg;
+        transform: translateY(-10px);
+    }
+    75% {
+        rotate: 20deg;
+        transform: translateY(15px);
+    }
+    100% {
+        rotate: 0deg;
+        transform: translateY(-5px);
+    }
+}
+
+.astronauta {
+    position: absolute;
+    height: auto;
+    bottom: 60vh;
+    right: 20vw;
+    animation: animacao-astronauta 10s ease-in-out infinite;
+}
+
+    /*animaçoes dos titulos da area hero flutuando*/
+
+@keyframes animacao-titulos {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.tituloHero {
+    animation: animacao-titulos 5s ease-in-out infinite;
+}
