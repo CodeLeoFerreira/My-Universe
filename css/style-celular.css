@@ -35,7 +35,6 @@ header {
     width: 100vw;
     height: 100vh;
     grid-area: hero;
-    border: 2px solid black;
     background-image: url(/imagens/layout-Destaque-mobileFundo-Destaque.png);
     background-size: cover;
 }
@@ -56,9 +55,16 @@ header {
     /*lua da sessão hero*/
 .logo {
     position: absolute;
-    opacity: 0.8;
+    opacity: 0.9;
     margin-top: -90vh;
     margin-left: -70vw;
+}
+.astronauta {
+    position: absolute;
+    opacity: 0.9;
+    margin-top: -80vh;
+    margin-left: -60vw;
+    width: 90px;
 }
 #hero > div {
     display: flex;
