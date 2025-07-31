@@ -15,4 +15,7 @@
     #hero > div a {
         width: 200px;
     }
+    .alinhamentoConteudo { /*ajuste de lainhamento de conteudo da area main*/
+        width: 720PX;
+    }
 }

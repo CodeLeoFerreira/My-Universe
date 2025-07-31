@@ -13,6 +13,11 @@
     width: 120px;
     }
 }
+@media (min-width: 550px) {
+    .alinhamentoConteudo { /*ajuste de lainhamento de conteudo da area main*/
+        width: 500PX;
+    }
+}
 
 @media (min-width: 720px) {
     .logo { /*ajustando posição da lua para tablets*/
@@ -22,5 +27,8 @@
     }
     .astronauta { /*ajustes de tamanho do astronauta*/
     width: 150px;
+    }
+    .alinhamentoConteudo { /*ajuste de lainhamento de conteudo da area main*/
+        width: 650PX;
     }
 }
