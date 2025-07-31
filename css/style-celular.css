@@ -5,7 +5,7 @@
 }
 
     /*textos globais*/
-h1, h2, h3, p {
+header > h1, h2, h3 {
     color: whitesmoke;
     text-align: center;
 }
@@ -18,7 +18,6 @@ html{
     /*configurações para celulares*/
 @media (min-width: 0px) {
         body{
-            width: 100vw;
             height: 100vh;
             display: grid;
             background-repeat: no-repeat;
@@ -26,19 +25,21 @@ html{
             grid-template-rows: repeat(3, 1fr);
             grid-template-areas: 
             'hero hero'
-            'main main'
+            'conteudo conteudo'
             'rodape rodape';
             ;
         }
 }
-header {
+header { 
+    z-index: 1;
+    position: fixed;
     width: 100vw;
     height: 100vh;
     grid-area: hero;
     background-image: url(/imagens/layout-Destaque-mobileFundo-Destaque.png);
     background-size: cover;
 }
-#hero {
+#hero { /*container de alinhamento dos itens da area destaque*/
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -59,19 +60,19 @@ header {
     margin-top: -90vh;
     margin-left: -70vw;
 }
-.astronauta {
+.astronauta { /*astronauta sessão hero*/
     position: absolute;
     opacity: 0.9;
     margin-top: -80vh;
     margin-left: -60vw;
     width: 90px;
 }
-#hero > div {
+#hero > div { /*div que separa os titulos e os botões na sessão hero*/
     display: flex;
     flex-direction: column;
     row-gap: 10px;
 }
-#hero > div a {
+#hero > div a { /*botões dentro da div da sessão hero*/
     width: 150px;
     text-decoration: none;
     color: white;
@@ -87,15 +88,77 @@ header {
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
 }
+
+/*area do conteudo*/
 main {
-    width: 100vw;
-    height: 100vh;
-    grid-area: main;
-    border: 2px solid black;
+    z-index: 2;
+    opacity: 0.9;
+    margin-top: 100vh;
+    grid-area: conteudo;
+    background-color: whitesmoke;
 }
+.alinhamentoConteudo { /*container de alinhamento dos itens da area conteudo*/
+    display: grid;
+    width: 100vw;
+    padding: 20px;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    'sobre'
+    'primeiroPasso'
+    'segundoPasso'
+    'terceiroPasso';
+    ;
+}
+.alinhamentoConteudo > div { /*alinhando conteudo dentro de cada div da area main*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+.alinhamentoConteudo > div h1 {
+    color: #ECA72C;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: rgb(40, 3, 75);
+    text-underline-offset: 10px;
+    padding: 20px;
+}
+.alinhamentoConteudo > div p {
+    text-align: justify;
+    text-indent: 10px;
+    font-weight: 600;
+    color: #221E22;
+    padding-bottom: 10px;
+}
+.alinhamentoConteudo > div ul {
+    list-style: none;
+    list-style-type: square;
+}
+#sobre {
+    grid-area: sobre;
+}
+#primeiroPasso {
+    padding-top: 20px;
+    grid-area: primeiroPasso;
+}
+#segundoPasso {
+    padding-top: 20px;
+    grid-area: segundoPasso;
+}
+#terceiroPasso {
+    padding-top: 20px;
+    grid-area: terceiroPasso;
+}
+
+/*roda pé*/
 footer {
+    z-index: 2;
     width: 100vw;
     height: 50px;
     grid-area: rodape;
-    border: 2px solid black;
+    background-color: #221E22;
+}
+footer > h1 {
+    text-align: center;
+    color: whitesmoke;
 }
