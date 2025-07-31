@@ -96,7 +96,6 @@ main {
     flex-direction: column;
     z-index: 2;
     opacity: 0.9;
-    margin-top: 100vh;
     grid-area: conteudo;
     background-color: whitesmoke;
 }
