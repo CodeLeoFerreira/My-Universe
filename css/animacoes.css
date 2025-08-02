@@ -68,62 +68,81 @@
     animation: animacao-titulos 5s ease-in-out infinite;
 }
 
-    /*animações de pegadas na area sobre*/
+    /*animações de pegadas na area sobre estás posições estao ajutadas para mobile ajustes para 
+    outras versoes estao sendo ajutadas nos outros css de cada tela*/
 @keyframes animacao-pegadas-Pé-1 {
     0% {
-        transform: translateY(0px);
-    }
-    25% {
-        transition: 0.3s;
-    }
-    50% {
-        opacity: 0.5;
-        transform: translateY(-80px);
-    }
-    75% {
-        transition: 0.3s;
         opacity: 0;
     }
+    50% {
+        opacity: 0.3;
+        transform: translateY(-10px);
+    }
     100% {
-        opacity: 0.5;
-        transform: translateY(-160px);
+        transform: translateY(0px);
     }
 }
 
 @keyframes animacao-pegadas-Pé-2 {
     0% {
-        transform: translateY(-20px);
-    }
-    25% {
-        transition: 0.3s;
         opacity: 0;
     }
-    50% {
-        opacity: 0.5;
-        transform: translateY(-40px);
-    }
-    75% {
-        transition: 0.3s;
+    100% {
+        transform: translateY(-10px);
+        opacity: 0.3;
     }
     100% {
-        opacity: 0.5;
-        transform: translateY(-260px);
+        transform: translateY(0px);
     }
 }
 
-#peDireito {
+
+.peDireito {
     opacity: 0.5;
     position: absolute;
-    bottom: 110;
-    left: 10vw;
-    width: 100px;
-    animation: animacao-pegadas-Pé-1 3s ease-in-out infinite;
+    right: 5vw;
+    width: 50px;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-name: animacao-pegadas-Pé-1;
+    animation-delay: 1s;
 }
-#peEsquerdo {
+.peEsquerdo {
     opacity: 0.5;
     position: absolute;
-    bottom: 110;
-    right: 10vw;
-    width: 100px;
-    animation: animacao-pegadas-Pé-2 3s ease-in-out infinite;
+    right: 0vw;
+    width: 50px;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-name: animacao-pegadas-Pé-2;
+    animation-delay: 1s;
+}
+
+.peDireitoInverso { /*para as pegadas em posiços inversas alterando de right para left posição contraria*/
+    opacity: 0.5;
+    position: absolute;
+    left: 0vw;
+    width: 50px;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-name: animacao-pegadas-Pé-1;
+    animation-delay: 1s;
+}
+.peEsquerdoInverso {
+    opacity: 0.5;
+    position: absolute;
+    left: 5vw;
+    width: 50px;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-name: animacao-pegadas-Pé-2;
+    animation-delay: 1s;
 }

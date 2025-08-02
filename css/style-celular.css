@@ -153,6 +153,18 @@ main {
     padding-top: 20px;
     grid-area: terceiroPasso;
 }
+        /*class q une as animaçoes das pegadas ao lado dos titulos na area sobre*/
+.pegadasAoLadoTitulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+    /*tirulos da area sobre*/
+.alinhamentoConteudo > div h1 {
+    font-size: 30px;
+}
+    /*animações de pegadas na area sobre*/
 
 /*roda pé*/
 footer {
