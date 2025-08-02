@@ -19,4 +19,12 @@ function escreverTexto() {
 }
 escreverTexto()
 
-    // aqui vai a animação do scroll
+    // botao voltar ao inicio
+const botao = document.getElementById('botaovoltar')
+botao.onclick = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+});
+}
+

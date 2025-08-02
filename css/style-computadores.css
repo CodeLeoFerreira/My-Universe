@@ -18,4 +18,7 @@
     .alinhamentoConteudo { /*ajuste de lainhamento de conteudo da area main*/
         width: 720PX;
     }
+    footer > section img { /*ajuste de icones do contato footer*/
+    width: 40px;
+}
 }
