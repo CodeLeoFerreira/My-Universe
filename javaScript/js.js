@@ -1,4 +1,3 @@
-window.alert('olá, pesso desculpas, mas está pagina ainda está em construção, por favor, volte mais tarde! :)');
 // animação do texto sendo digitado
 const titulo = 'My Universe'
 const textoAnimado = document.getElementById('textoAnimado');
@@ -19,4 +18,13 @@ function escreverTexto() {
 }
 escreverTexto()
 
-    // aqui vai a animação do scroll
+    // botao voltar ao inicio
+const botao = document.getElementById('botaovoltar')
+botao.onclick = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+});
+}
+
+window.alert(' está pagina foi criada com as tecnologias HTML, CSS e JavaScript, e tem como objetivo ser um portifólio de estudos, onde você pode ver o que eu aprendi até agora. Espero que goste!');

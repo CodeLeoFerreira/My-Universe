@@ -18,4 +18,21 @@
     .alinhamentoConteudo { /*ajuste de lainhamento de conteudo da area main*/
         width: 720PX;
     }
+    footer > section img { /*ajuste de icones do contato footer*/
+    width: 40px;
+    }
+
+    /*ajustes de posição das pegadas*/
+    .peDireito {
+        margin-right: 25vw;
+    }
+    .peEsquerdo {
+        margin-right: 26vw;
+    }
+    .peDireitoInverso {
+        margin-left: 26vw;
+    }
+    .peEsquerdoInverso {
+        margin-left: 25vw;
+    }
 }

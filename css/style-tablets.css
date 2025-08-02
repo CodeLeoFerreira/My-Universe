@@ -31,4 +31,17 @@
     .alinhamentoConteudo { /*ajuste de lainhamento de conteudo da area main*/
         width: 650PX;
     }
+        /*ajustes de posição das pegadas*/
+    .peDireito {
+        margin-right: 15vw;
+    }
+    .peEsquerdo {
+        margin-right: 14vw;
+    }
+    .peDireitoInverso {
+        margin-left: 14vw;
+    }
+    .peEsquerdoInverso {
+        margin-left: 15vw;
+    }
 }
