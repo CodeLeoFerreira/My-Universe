@@ -12,6 +12,19 @@
     .astronauta { /*ajustes de tamanho do astronauta*/
     width: 120px;
     }
+    /*ajustes de posição das pegadas*/
+    .peDireito {
+        margin-right: 15vw;
+    }
+    .peEsquerdo {
+        margin-right: 14vw;
+    }
+    .peDireitoInverso {
+        margin-left: 15vw;
+    }
+    .peEsquerdoInverso {
+        margin-left: 15vw;
+    }
 }
 @media (min-width: 550px) {
     .alinhamentoConteudo { /*ajuste de lainhamento de conteudo da area main*/
@@ -25,23 +38,48 @@
         margin-left: -90vw;
         width: 250px;
     }
-    .astronauta { /*ajustes de tamanho do astronauta*/
+
+    /*ajustes de tamanho do astronauta*/
+    .astronauta { 
     width: 150px;
     }
-    .alinhamentoConteudo { /*ajuste de lainhamento de conteudo da area main*/
+
+    /*ajuste de lainhamento de conteudo da area main*/
+    .alinhamentoConteudo { 
         width: 650PX;
     }
+    
         /*ajustes de posição das pegadas*/
     .peDireito {
-        margin-right: 15vw;
+        margin-right: 20vw;
     }
     .peEsquerdo {
-        margin-right: 14vw;
+        margin-right: 19vw;
     }
     .peDireitoInverso {
-        margin-left: 14vw;
+        margin-left: 20vw;
     }
     .peEsquerdoInverso {
-        margin-left: 15vw;
+        margin-left: 19vw;
+    }
+
+            /*ajustes do modal para telas maiores*/
+    #modal { /*centralizando o alinhar modal*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    #alinharModal { /*alinhando o conteudo para telas maiores*/
+    width: 720px;
+    padding: 20px;
+    }
+
+    #alinharModal p { /*centralizando o paragrafo para ficar melhor em telas maiores*/
+    text-align: center;
+    }
+
+    .alinhamentoConteudo > div { /*ajustando padding da area de conteudo para telas maiores*/
+    padding: 50px;
     }
 }

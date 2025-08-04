@@ -27,4 +27,7 @@ botao.onclick = () => {
 });
 }
 
-window.alert(' está pagina foi criada com as tecnologias HTML, CSS e JavaScript, e tem como objetivo ser um portifólio de estudos, onde você pode ver o que eu aprendi até agora. Espero que goste!');
+const fecharModal = document.getElementById('fecharModal');
+fecharModal.addEventListener('click', () => {
+    document.getElementById('modal').style.display = 'none';
+})

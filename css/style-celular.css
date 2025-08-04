@@ -31,7 +31,7 @@ html{
         }
 }
 header { 
-    z-index: 1;
+    z-index: 2;
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -39,6 +39,54 @@ header {
     background-image: url(/imagens/layout-Destaque-mobileFundo-Destaque.png);
     background-size: cover;
 }
+    /*configurando modal*/
+#modal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    height: 70vh;
+    position: fixed;
+    background-color: bisque;
+    opacity: 0.98;
+    border-radius: 10px;
+    z-index: 10;
+}
+#alinharModal {
+    width: 70vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+}
+#alinharModal h2{
+    color: #221E22;
+    font-weight: bold;
+}
+#alinharModal p {
+    text-align: justify;
+    text-indent: 10px;
+    color: #221e2294;
+    font-weight: bolder;
+    font-size: 20px;
+}
+#alinharModal button {
+    width: 100px;
+    height: 40px;
+    background-color: #221E22;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#alinharModal button:hover {
+    transition: .3s;
+    box-shadow: 1px 2px 10px black;
+}
+
+    /*configurações da sessão hero*/
 #hero { /*container de alinhamento dos itens da area destaque*/
     width: 100vw;
     height: 100vh;
@@ -66,6 +114,7 @@ header {
     margin-top: -80vh;
     margin-left: -60vw;
     width: 90px;
+    z-index: 11;
 }
 #hero > div { /*div que separa os titulos e os botões na sessão hero*/
     display: flex;
@@ -96,10 +145,9 @@ main {
     align-items: center;
     flex-direction: column;
     z-index: 2;
-    opacity: 0.9;
     margin-top: 100vh;
     grid-area: conteudo;
-    background-color: whitesmoke;
+    background-color: #31263ea2;
 }
 .alinhamentoConteudo { /*container de alinhamento dos itens da area conteudo*/
     display: grid;
@@ -118,6 +166,11 @@ main {
     flex-direction: column;
     align-items: center;
     row-gap: 20px;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px  whitesmoke;
+    margin-top: 10px;
 }
 .alinhamentoConteudo > div h1 {
     color: #ECA72C;
@@ -130,8 +183,9 @@ main {
 .alinhamentoConteudo > div p {
     text-align: justify;
     text-indent: 10px;
-    font-weight: 600;
-    color: #221E22;
+    font-weight: bolder;
+    color: #221e22bd;
+    font-size: 18px;
     padding-bottom: 10px;
 }
 .alinhamentoConteudo > div ul {
@@ -172,10 +226,12 @@ footer {
     align-items: center;
     justify-content: center;
     column-gap: 30px;
-    z-index: 2;
+    z-index: 3;
     grid-area: rodape;
-    background-color: #221E22;
+    background-color: #221e22dc;
     padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 footer > h1 {
     text-align: center;
@@ -196,11 +252,16 @@ footer > section img:hover {
     box-shadow: 1px 3px 10px  whitesmoke;
 }
 #botaovoltar {
+    background-color: #221e22d8;
+    position: fixed;
+    left: 85%;
+    top: 93%;
     width: 30px;
     border: none;
     border-radius: 10px;
     color: whitesmoke;
     font-weight: bold;
+    z-index: 10;
 }
 #botaovoltar:hover {
     transition: .3s;
