@@ -100,7 +100,7 @@
 .peDireito {
     opacity: 0.5;
     position: absolute;
-    right: 5vw;
+    right: 10vw;
     width: 50px;
     opacity: 0;
     animation-duration: 2s;
@@ -112,7 +112,7 @@
 .peEsquerdo {
     opacity: 0.5;
     position: absolute;
-    right: 0vw;
+    right: 5vw;
     width: 50px;
     opacity: 0;
     animation-duration: 2s;
@@ -125,7 +125,7 @@
 .peDireitoInverso { /*para as pegadas em posiços inversas alterando de right para left posição contraria*/
     opacity: 0.5;
     position: absolute;
-    left: 0vw;
+    left: 5vw;
     width: 50px;
     opacity: 0;
     animation-duration: 2s;
@@ -137,7 +137,7 @@
 .peEsquerdoInverso {
     opacity: 0.5;
     position: absolute;
-    left: 5vw;
+    left: 10vw;
     width: 50px;
     opacity: 0;
     animation-duration: 2s;
