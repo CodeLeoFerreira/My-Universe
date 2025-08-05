@@ -27,6 +27,12 @@ botao.onclick = () => {
 });
 }
 
+    // abrir modal
+window.onload = () => { //depois que a pagina carregar abrir o modal
+    document.getElementById('modal').style.opacity = '1';
+}
+
+    //botão de fechar o modal
 const fecharModal = document.getElementById('fecharModal');
 fecharModal.addEventListener('click', () => {
     document.getElementById('modal').style.display = 'none';
