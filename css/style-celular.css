@@ -51,6 +51,8 @@ header {
     opacity: 0.98;
     border-radius: 10px;
     z-index: 10;
+    opacity: 0;
+    transition: 0.3s;
 }
 #alinharModal {
     width: 70vw;
@@ -218,7 +220,6 @@ main {
 .alinhamentoConteudo > div h1 {
     font-size: 30px;
 }
-    /*animações de pegadas na area sobre*/
 
 /*roda pé*/
 footer {
